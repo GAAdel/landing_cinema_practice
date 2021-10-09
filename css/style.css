@@ -1,9 +1,21 @@
+> {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   background-color: #621402;
   font-family: "Roboto", sans-serif;
+  color: white;
 }
 
 .header {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(98, 20, 2, 0.31)), color-stop(85.62%, #621402)), url("../img/bg.jpg") no-repeat center top/cover;
+  background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url("../img/bg.jpg") no-repeat center top/cover;
+}
+
+.navbar {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,4 +65,170 @@ body {
   max-height: 33px;
   border-radius: 50%;
   margin-left: 11px;
+}
+
+.film {
+  margin-top: 60px;
+  color: white;
+}
+
+.film-title-small {
+  opacity: 0.5;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.film-title {
+  font-size: 36px;
+  line-height: 42px;
+  margin-top: 11px;
+  margin-bottom: 23px;
+}
+
+.film-description {
+  font-size: 16px;
+  line-height: 150%;
+  max-width: 560px;
+}
+
+.film {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.film-trailer {
+  margin: auto;
+}
+
+.film-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+}
+
+.time {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.time-icon {
+  margin-right: 14px;
+}
+
+.rating {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 34px;
+}
+
+.rating-icon {
+  margin-right: 14px;
+}
+
+.rating-current {
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.session {
+  margin-top: 62px;
+  padding-top: 46px;
+  padding-bottom: 63px;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.session-label {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.session-date-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.session-date-item {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  text-align: center;
+  width: 90px;
+  height: 90px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 15px;
+  -webkit-transition: background-color 0.2s;
+  transition: background-color 0.2s;
+}
+
+.session-month {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.session-day {
+  font-size: 30px;
+  line-height: 35px;
+}
+
+.session-month {
+  font-size: 19px;
+  line-height: 22px;
+}
+
+.session-date-item:hover {
+  background-color: #fe8e05;
+  color: #621402;
+}
+
+.select {
+  margin-top: 15px;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  color: white;
+  padding: 18px;
+  cursor: pointer;
+}
+
+.select-cinema {
+  min-width: 470px;
 }

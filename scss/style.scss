@@ -32,6 +32,7 @@ body {
 .container {
   max-width: 1170px;
   margin: auto;
+  width: 90%;
 }
 
 .menu {
@@ -305,13 +306,13 @@ body {
 
   .session-date {
     flex-basis: 70%;
+    margin-bottom: 40px;
   }
 
   .session-time {
     order: 2;
   }
   .session-cinema {
-    margin-top: 40px;
     order: 3;
   }
   .menu-item {
@@ -357,5 +358,17 @@ body {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
+  }
+  .film-description {
+    margin-right: 30px;
+  }
+  .film {
+    flex-direction: column;
+  }
+
+  .film-trailer {
+    margin-right: auto;
+    margin-left: 0;
+    margin-top: 40px;
   }
 }
